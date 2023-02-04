@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 400; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 212; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -739,10 +739,18 @@ img {
     padding: 0 1.5rem;
 }
 
+.portfolio__data,
+.portfolio__decscription {
+    margin: 12px 0;
+}
+
 .portfolio__img {
     width: 265px;
+    height: 180px;
     border-radius: 0.5rem;
+    box-shadow: 0px 4px 20px 2px #00000038;
     justify-self: center;
+    object-fit: cover;
 }
 
 .portfolio__title {
@@ -1223,12 +1231,12 @@ img {
     .project__container {
         background-color: var(--first-color-second);
         border-radius: 1rem;
-        padding: 3rem 2.5rem 0;
+        padding: 1rem 2.5rem 0;
         grid-template-columns: 1fr max-content;
         column-gap: 3rem;
     }
     .project__data {
-        padding-top: 0.8rem;
+        padding: 2rem 0;
     }
 
     .footer__container {
@@ -1271,7 +1279,7 @@ img {
     }
 
     .services__container {
-        grid-template-columns: repeat(3, 238px);
+        grid-template-columns: repeat(2, 238px);
     }
 
     .portfolio__container {
